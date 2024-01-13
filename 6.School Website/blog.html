@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="logo.jpg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="hamburger menu.jpeg" alt="">
+        </div>
+    </nav>
+
+    <!-- Home-->
+    <section id="about-home">
+        <h2> Blog/</h2>
+    </section>
+
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+                <img src="b2.png" alt="">
+                <h3>Leam Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta, labore reprehenderit
+                    eaque numquam illum porro ut, fugit enim quam esse vitae earum beatae vel doloribus corporis, minus
+                    aspernatur asperiores reiciendis eos. Aliquid vitae et, reprehenderit voluptatibus esse accusantium
+                    quasi repudiandae consectetur. Expedita, reprehenderit soluta?</p>
+                    <a href="post.html"">Read More</a>
+            </div>
+            <div class="post">
+                <img src="b3.jfif" alt="">
+                <h3>Leam Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta, labore reprehenderit
+                    eaque numquam illum porro ut, fugit enim quam esse vitae earum beatae vel doloribus corporis, minus
+                    aspernatur asperiores reiciendis eos. Aliquid vitae et, reprehenderit voluptatibus esse accusantium
+                    quasi repudiandae consectetur. Expedita, reprehenderit soluta?</p>
+                    <a href="post.html"">Read More</a>
+            </div>
+            <div class="post">
+                <img src="b4.jfif" alt="">
+                <h3>Leam Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta, labore reprehenderit
+                    eaque numquam illum porro ut, fugit enim quam esse vitae earum beatae vel doloribus corporis, minus
+                    aspernatur asperiores reiciendis eos. Aliquid vitae et, reprehenderit voluptatibus esse accusantium
+                    quasi repudiandae consectetur. Expedita, reprehenderit soluta?</p>
+                    <a href="#"">Read More</a>
+            </div>
+            <div class="post">
+                <img src="b5.jfif" alt="">
+                <h3>Leam Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta, labore reprehenderit
+                    eaque numquam illum porro ut, fugit enim quam esse vitae earum beatae vel doloribus corporis, minus
+                    aspernatur asperiores reiciendis eos. Aliquid vitae et, reprehenderit voluptatibus esse accusantium
+                    quasi repudiandae consectetur. Expedita, reprehenderit soluta?</p>
+                    <a href="#"">Read More</a>
+            </div>
+        </div>
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">App Development</a>
+            <hr>
+            <a href="#">Web Design</a>
+            <hr>
+            <a href="#">Frontend Web Development</a>
+            <hr>
+            <a href="#">Backend Development</a>
+            <hr>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investar Relations</li>
+            <li>Terms Of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Repatutation</li>
+            <li>Poewr Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resourced</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You Can trust us .we Only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Addres">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169;2023 All rights reserved | This Template is Made By Abhisek</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="logo.jpg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="hamburger menu.jpeg" alt="">
+        </div>
+    </nav>
+
+    <!-- Home-->
+    <section id="about-home">
+        <h2>About University of Cambridg /</h2>
+    </section>
+
+    <section id="about-container">
+        <div class="about-image">
+            <img src="about-image.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Welcome To Cambridg , Enhance Your Skills with the best online courses</h2>
+            <p>You can start and finish one of these popular courses in under a day — for free ! Check the list below.
+                Take the course for free</p>
+            <div class="about-fe">
+                <img src="fe1.jpg" alt="">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>You can start and finish one of these popular courses in under our site</p>
+                </div>
+            </div>
+
+            <div class="about-fe">
+                <img src="fe2.PNG" alt="">
+                <div class="fe-text">
+                    <h5>Lifetime Access</h5>
+                    <p>You can start and finish one of these popular courses in under our site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <h1> Awesome Features</h1>
+        <p>Replenish man have thing gathering light yielding shall you</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>One make creepeth,man bearing theira firmament won't great heaven</p>
+            </div>
+
+            <div class="fea-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>Dell online course</h3>
+                <p>One make creepeth,man bearing theira firmament won't great heaven</p>
+            </div>
+
+            <div class="fea-box">
+                <i class="fa-solid fa-award"></i>
+                <h3>Global certification</h3>
+                <p>One make creepeth,man bearing theira firmament won't great heaven</p>
+            </div>
+    </section>
+
+    <section id="trust">
+        <h1> Trusted By</h1>
+        <p>Replenish man have thing gathering light yielding shall you</p>
+        <div class="trust-image">
+            <img src="trust-img1.jpg" alt="">
+            <img src="trust-img2.jpg" alt="">
+            <img src="trust-img3.PNG" alt="">
+            <img src="trust-img4.PNG" alt="">
+            <img src="trust-img5.PNG" alt="">
+            <img src="trust-img6.PNG" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investar Relations</li>
+            <li>Terms Of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Repatutation</li>
+            <li>Poewr Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resourced</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You Can trust us .we Only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Addres">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169;2023 All rights reserved | This Template is Made By Abhisek</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>

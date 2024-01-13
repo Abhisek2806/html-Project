@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Guess The Random Number </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="init()">
+  <main>
+      <div id="welcomeScreen">
+        <h2>Guess The Random Number Between 1-100</h2>
+        <img class="image"
+          src="https://t0.gstatic.com/images?q=tbn:ANd9GcQwliLWs877LBMoZJDfJzks1HDFiUb2Dedl73lETnjjw5Qyjn3l"
+          alt="logo" />
+
+        <section class="eventSection">
+          <p>Select The Difficulty</p>
+          <div class="button-wrapper">
+            <button onclick="easyMode()">Easy: 10 attempts</button>
+            <button onclick="hardMode()">Hard: 5 attempts</button>
+          </div>
+        </section>
+      </div>
+      <!-- our acual game area  -->
+      <div id="gameArea">
+        <div id="newGameButton">
+          <button onclick="newGameBegin()">New Game</button>
+        </div>
+
+        <section>
+          <h3 id="textOutput">Your Guess</h3>
+          <input type="number" id="inputBox" min="1" max="100" placeholder="Enter Your Number"
+            onchange="compareGuess()" />
+        </section>
+
+        <section class="stats">
+          <div class="info">
+            <p>Number of previous attempts</p>
+            <span id="attempts"> 0 </span>
+          </div>
+          <div class="info">
+            <p>Number of previous guesses</p>
+            <span id="guesses"> 0 </span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+
+</html>
